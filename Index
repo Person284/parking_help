@@ -1,0 +1,80 @@
+<html>
+<body>
+
+<div style =" display: grid">
+
+<div style = "display: inline-block">
+Staff
+  <input type="number" value="0">
+  <button onclick="incre(this)">increase</button>
+  <button onclick="decre(this)">decrease</button>
+</div>
+
+<div style = "display: inline-block">
+Student
+  <input type="number" value="0">
+  <button onclick="incre(this)">increase</button>
+  <button onclick="decre(this)">decrease</button>
+</div>
+
+<div style = "display: inline-block">
+  Visit
+  <input type="number" value="0">
+  <button onclick="incre(this)">increase</button>
+  <button onclick="decre(this)">decrease</button>
+
+</div>
+
+<div style = "display: inline-block">
+  Unreg:
+  <input type="number" value="0">
+  <button onclick="incre(this)">increase</button>
+  <button onclick="decre(this)">decrease</button>
+</div>
+<div style = "display: inline-block">
+  HandiCap:
+  <input type="number" value="0">
+  <button onclick="incre(this)">increase</button>
+  <button onclick="decre(this)">decrease</button>
+</div>
+<div style = "display: inline-block">
+  Charger:
+  <input type="number" value="0">
+  <button onclick="incre(this)">increase</button>
+  <button onclick="decre(this)">decrease</button>
+</div>
+<div style = "display: inline-block">
+  Time spot:
+  <input type="number" value="0">
+  <button onclick="incre(this)">increase</button>
+  <button onclick="decre(this)">decrease</button>
+</div>
+<div style = "display: inline-block">
+  24 hour reserve RD or CD:
+  <input type="number" value="0">
+  <button onclick="incre(this)">increase</button>
+  <button onclick="decre(this)">decrease</button>
+</div>
+<div style = "display: inline-block">
+  24 hour reserve:
+  <input type="number" value="0">
+  <button onclick="incre(this)">increase</button>
+  <button onclick="decre(this)">decrease</button>
+</div>
+
+</div>
+
+<script>
+function incre(x) {
+  const input = x.parentElement.querySelector('input');
+  input.stepUp(1);
+}
+function decre(x) {
+  const input = x.parentElement.querySelector('input');
+  input.stepUp(-1);
+}
+
+</script>
+
+</body>
+</html>
